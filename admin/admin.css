@@ -1,0 +1,504 @@
+@charset "utf-8";
+body {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #E8F5FF;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+.a {
+	background-color: #DEDEDE;
+	border: 1px solid #BBB;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.a1 {
+	background-color: #DDD;
+	border: 1px solid #BBB;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.a3 {
+	background-color: #EEE;
+	border: 1px solid #BBB;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.a4 {
+	background-color: #EFEFEF;
+	border: 1px solid #BBB;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.tr-bg {
+	background-image: url(/admin/images/tr-bg.png);
+	background-repeat: repeat-x;
+}
+
+/* ~~ Element/tag selectors ~~ */
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0px;	 
+	padding: 0px; 
+}*/
+.container h3 {
+	font-size: 0.9em;
+}
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+.bbox {
+	border: 1px solid #83BBD9;
+	background-color: #83BBD9;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: underline;
+}
+.menuholder	{
+	width:960px;
+	height:32px;
+	background-color:#EEE;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding: 0px;
+}
+/* ~~ This fixed width container surrounds all other blocks ~~ */
+.container {
+	width: 940px;
+	background: #FFFFFF;
+	border: 1px solid #000; /* the auto value on the sides, coupled with the width, centers the layout */
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-left: auto;
+	height: auto;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+.scontainer {
+	width: 940px;
+	background: #FFFFFF;
+	border: 1px solid #000; /* the auto value on the sides, coupled with the width, centers the layout */
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-left: auto;
+	height: auto;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	font-size: 90%;
+}
+/* ~~ The header is not given a width. It will extend the full width of your layout. ~~ */
+header {
+	width: 960px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding: 0px;
+	border: 1px solid #000;
+	background-color: #FFF;
+	height: auto;
+}
+.logo {
+	width: 960px;
+	height: auto;
+	min-height: 100px;
+	max-height: 200px;
+}
+.dts {
+	width: 950px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	text-align: right;
+	position: absolute;
+	top: 15px;
+}
+.sidebar1 {
+	float: left;
+	width: 180px;
+	background: #EADCAE;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 100%;
+	float: left;
+}
+aside {
+	float: left;
+	width: 180px;
+	background: #EADCAE;
+	padding: 10px 0;
+}
+.pagecontainer {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	overflow: hidden; /* this declaration makes the .pagecontainer understand where the floated columns within ends and contain them */
+}
+
+.pageforms {
+	float: right;
+	width: 180px;
+	background: #EADCAE;
+	padding-bottom: 10px;
+}
+.pagecontent {
+
+	padding: 10px 0;
+	width: 780px;
+	float: right;
+}
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+footer {
+	padding: 10px 0;
+	background: #CCC49F;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+/* ~~ Miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty block element as the final element following the last floated block (within the .container) if the footer is removed or taken out of the .container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, footer, aside, nav, article, figure {
+	display: block;
+}
+.formtext {
+	font-size: 11px;
+	vertical-align: top;
+	background-color: #EFEFEF;
+	border: 1px solid #333;
+	margin: 0px;
+	padding: 10px;
+}
+.formtext h1 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+.oformtext {
+	font-size: 11px;
+	vertical-align: top;
+	background-color: #F2FAFF;
+	border: 1px solid #666;
+	margin: 0px;
+	padding: 10px;
+}
+.oformtext h1 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+.subform {
+	font-weight: bold;
+	color: #FFF;
+	background-color: #060;
+	height: 50px;
+	border: 5px groove #999;
+	font-size: 1.2em;
+	font-variant: small-caps;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.forminput {
+	vertical-align: middle;
+}
+
+.formtext p {
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	color: #555;
+}
+ul.plist	{
+	margin: 0px;
+	list-style-type: none;
+	font-size: 90%;
+	cursor: default;
+	width: 200px;
+	padding: 0px;
+}
+ul.plist li
+{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	text-align: left;
+	cursor: pointer;
+	background-color: #999;
+	border: 1px solid #000;
+}
+ul.subplist	{
+	margin: 0px;
+	list-style-type: none;
+	font-size: 85%;
+	cursor: default;
+	width: 200px;
+}
+ul.MenuBarHorizontal
+{
+	list-style-type: none;
+	font-size: 90%;
+	cursor: default;
+	width: 100%;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 10px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+/* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.html */
+ul.MenuBarActive
+{
+	z-index: 1000;
+}
+/* Menu item containers, position children relative to this container and are a fixed width */
+ul.MenuBarHorizontal li
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	position: relative;
+	text-align: left;
+	cursor: pointer;
+	float: left;
+}
+img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	margin-bottom: -2px;
+	padding-right: 6px;
+}
+
+/* Submenus should appear below their parent (top: 0) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
+ul.MenuBarHorizontal ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 90%;
+	z-index: 1020;
+	cursor: default;
+	width: 12em;
+	position: absolute;
+	left: -1000em;
+}
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to auto so it comes onto the screen below its parent menu item */
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible
+{
+	left: auto;
+}
+/* Menu item containers are same fixed width as parent */
+ul.MenuBarHorizontal ul li
+{
+	width: 12em;
+}
+/* Submenus should appear slightly overlapping to the right (95%) and up (-5%) */
+ul.MenuBarHorizontal ul ul
+{
+	position: absolute;
+	margin: -5% 0 0 95%;
+}
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to 0 so it comes onto the screen */
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible ul.MenuBarSubmenuVisible
+{
+	left: auto;
+	top: 0;
+}
+
+/*******************************************************************************
+
+ DESIGN INFORMATION: describes color scheme, borders, fonts
+
+ *******************************************************************************/
+
+/* Submenu containers have borders on all sides */
+ul.MenuBarHorizontal ul
+{
+	border: 1px solid #CCC;
+}
+/* Menu items are a light gray block with padding and no text decoration */
+ul.MenuBarHorizontal a
+{
+	display: block;
+	cursor: pointer;
+	background-color: #EEE;
+	color: #333;
+	text-decoration: none;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #CCC;
+	padding-top: 0.5em;
+	padding-right: 0.95em;
+	padding-bottom: 0.5em;
+	padding-left: 0.75em;
+}
+/* Menu items that have mouse over or focus have a blue background and white text */
+ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus
+{
+	background-color: #33C;
+	color: #FFF;
+}
+/* Menu items that are open with submenus are set to MenuBarItemHover with a blue background and white text */
+ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible
+{
+	background-color: #33C;
+	color: #FFF;
+}
+
+/*******************************************************************************
+
+ SUBMENU INDICATION: styles if there is a submenu under a given menu item
+
+ *******************************************************************************/
+
+/* Menu items that have a submenu have the class designation MenuBarItemSubmenu and are set to use a background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal a.MenuBarItemSubmenu
+{
+	background-image: url(SpryMenuBarDown.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+/* Menu items that have a submenu have the class designation MenuBarItemSubmenu and are set to use a background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenu
+{
+	background-image: url(SpryMenuBarRight.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+/* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal a.MenuBarItemSubmenuHover
+{
+	background-image: url(SpryMenuBarDownHover.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+/* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenuHover
+{
+	background-image: url(SpryMenuBarRightHover.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+
+/*******************************************************************************
+
+ BROWSER HACKS: the hacks below should not be changed unless you are an expert
+
+ *******************************************************************************/
+
+/* HACK FOR IE: to make sure the sub menus show above form controls, we underlay each submenu with an iframe */
+ul.MenuBarHorizontal iframe
+{
+	position: absolute;
+	z-index: 1010;
+	filter:alpha(opacity:0.1);
+}
+/* HACK FOR IE: to stabilize appearance of menu items; the slash in float is to keep IE 5.0 from parsing */
+@media screen, projection
+{
+	ul.MenuBarHorizontal li.MenuBarItemIE
+	{
+		display: inline;
+		f\loat: left;
+		background: #FFF;
+	}
+}
+.pgallery {
+	font-size: 80%;
+}
+.msg {
+	font-weight: bold;
+	color: #900;
+	background-color: #CCC;
+	text-align: center;
+	padding-top: 0.5em;
+	padding-right: 1.5em;
+	padding-bottom: 0.5em;
+	padding-left: 1.5em;
+	font-size: 1.1em;
+	margin: 5px;
+	border: 1px solid #000;
+	text-align: center;
+}
+.sortable li {
+	background-color: #EFEFEF;
+	display: block;
+	margin: 5px;
+	padding: 5px;
+	/*float: left;*/
+	width: 90%;
+	border: 1px solid #000;
+}
+.sortablephotos li {
+	background-color: #EFEFEF;
+	display: block;
+	margin: 5px;
+	padding: 5px;
+	float: left;
+	width: 200px;
+	height: 210px;
+	border: 1px solid #000;
+}
+.sortablephotos li img {
+	height: 150px;
+	width: 200px;
+}
+.sortablephotos h3 {
+	font-size: 11px;
+	font-weight:bold;
+}

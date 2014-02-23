@@ -1,0 +1,128 @@
+@charset "utf-8";
+/*body {
+	margin: 0px;
+	padding: 0px;
+	color: #000;
+	background-color: #404751;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.4;
+	height: 50px;
+	background:#000 url(/images/bg-field2.jpg) no-repeat fixed center top;
+	display:block;
+	z-index:0;
+	padding-top: 0px;
+}*/
+#slideshow {
+	width: 600px;
+	height: 420px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	text-align:center;
+	overflow:hidden;
+	float: left;
+}
+#slideshow img {
+	background-color: #EEE;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	left: auto;
+	top: -60px;
+	right: auto;
+	bottom: auto;
+	max-height: 480px;
+	position: relative;
+}
+
+#controls {
+	z-index: 1000;
+	position: absolute;
+	display: none;
+	border: 1px solid #ddd;
+	padding: 6px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	top: 645px;
+	font-size: 10px;
+	background-image: url(/images/control-bg.png);
+	background-repeat: repeat;
+	font-weight: bold;
+}
+#controls a:link {
+	color: #FFF;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+#controls a:visited {
+	color: #FFF;
+	text-decoration: underline;
+}
+#controls a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	color: #900;
+}
+#controls span { margin: 0 5px }
+/*#nav {
+	z-index: 1000;
+	position: absolute;
+	top: 490px;
+	left: auto;
+	width: 680px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 0px;
+	right: auto;
+	float: left;
+}
+#nav a {
+	background: #eee;
+	border: 1px solid #ccc;
+	text-decoration: none;
+	width: 90px;
+	height: 90px;
+	min-height: 90px;
+	padding-top: 63px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+#nav a.activeSlide {
+	background: #ea0;
+	width: 90px;
+	min-height: 90px;
+	padding-top: 63px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#nav a:focus { outline: none; }
+#nav img {
+	padding: 5px;
+	height: 68px;
+	width: 90px;
+	margin-top: 20px;
+}*/
+#output { text-align: left; }
+/*#slides {
+	height: 480px;
+	width: 640px;
+	margin: 0px;
+	padding: 0px;
+}
+.simg {
+	height: 480px;
+	width: 640px;
+	margin: 0px;
+	padding: 0px;
+}*/
